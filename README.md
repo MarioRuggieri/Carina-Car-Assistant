@@ -36,9 +36,9 @@ To make it working:
 
 * Launch `demoCarina.py` on the single board computer (e.g. Raspberry Pi) 
 * Connect it to an Arduino UNO or MEGA with a CAN-bus shield.
-* Connect a light sensor to the Arduino and compile the `Carina_CANnode.ino` sketch on it taking care about sensor pin number
+* Connect a light sensor to the Arduino and compile* the `Carina_CANnode.ino` sketch on it taking care about sensor pin number
 * Simulate the car using another Arduino connected to the first one which runs the .ino sketch
-* Connect a led to the second Arduino and compile the `Light_CANnode.ino` sketch on it taking care about led pin number
+* Connect a led to the second Arduino and compile* the `Light_CANnode.ino` sketch on it taking care about led pin number
 
 Two commands available: "accendi i fari" (turn headlights on) and "spegni i fari" (turn headlights off)
 
@@ -46,17 +46,19 @@ According to your commands and the light in your room Carina will turn the light
 
 It has been used the SAE J1939 standard for communication.
 
+(*)You need to copy ARD1939 directory into your Arduino/libraries directory
+
 # External Libraries
 
-For hotwords detection we used [Snowboy](https://github.com/Kitt-AI/snowboy) [1]
+For hotwords detection we used [Snowboy](https://github.com/Kitt-AI/snowboy) [1] which is <b>Apache Licensed</b>.
 
-For SAE J1939 on Arduino we used [ARD1939](http://copperhilltech.com/sae-j1939-ecu-programming-vehicle-bus-simulation-with-arduino/) library [2]
+For SAE J1939 on Arduino we used [ARD1939](http://copperhilltech.com/sae-j1939-ecu-programming-vehicle-bus-simulation-with-arduino/) library [2] which is under <b>GNU v3.0 License</b>
 	
 # Licensing
 Please read LICENSE file.
 
 This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
+it under the terms of the <b>GNU General Public License</b> as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
